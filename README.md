@@ -42,7 +42,7 @@ A simple Python bot that logs into the KTU portal, checks revaluation results fo
 
 To automate the bot using GitHub Actions:
 
-1. Copy the provided `automate.yml` file into your repository’s `.github/workflows/` folder.
+1. Fork this repository and copy the provided `automate.yml` file into your repository’s `.github/workflows/` folder.
 2. Make sure your `ktu_revalbot.py` has the correct credentials set.
 3. The workflow runs daily at 12:00 AM IST or can be triggered manually from the GitHub Actions tab. The workflow can be modified accordingly to run at different times.
 
