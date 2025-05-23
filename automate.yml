@@ -22,4 +22,4 @@ jobs:
 
       - name: Run script
         run: |
-          python3 ktu.py
+          python3 ktu_revalbot.py
