@@ -34,7 +34,7 @@ A simple Python bot that logs into the KTU portal, checks revaluation results fo
    python ktu_revalbot.py
    ```
 
-5. Receive Telegram notifications when your revaluation results are published.
+5. Receive Telegram notification of the current revaluation status.
 
 ---
 
