@@ -1,0 +1,25 @@
+name: Daily KTU Reval Check
+
+on:
+  schedule:
+    - cron: '30 18 * * *'  # Runs at 12:00 AM IST
+  workflow_dispatch:
+
+jobs:
+  check-ktu:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run script
+        run: |
+          python3 ktu.py
